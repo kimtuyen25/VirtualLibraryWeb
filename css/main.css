@@ -1,0 +1,62 @@
+.card{
+    /* border-color:#fff; */
+    border: none;
+}
+.img-fluid {
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.4);
+}
+.card-body{
+    margin-top: -16px;
+}
+.card-title{
+    font-size: 17px;
+    font-weight: bold;
+}
+.card-title:hover{
+    color:green;
+}
+.card-text{
+    font-size: 12px;
+    text-align: justify;
+}
+.tacGia{
+    font-size: 13px;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.xemThem{
+    text-align: right;
+}
+.xemThem:hover{
+    color:green;
+}
+.titlePage1{
+    font-weight: bold;
+}
+
+.book-coverPage1 {
+    perspective: 1000px; 
+}
+
+.book-coverPage1 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; 
+}
+
+.book-coverPage1:hover img {
+    transform: rotateY(-10deg);
+}
+
+.book-cover{
+    -webkit-transform: perspective(30px) rotateY(-10deg);
+    -moz-transform: perspective(30px) rotateY(-10deg);
+    transform: perspective(30px) rotateY(10deg);
+}
+.book-cover img{
+    width: 70px;
+    height: 105px;
+    outline: 1px solid transparent;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.4);
+}
+

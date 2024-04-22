@@ -1,0 +1,88 @@
+body{
+    min-width: 1200px;
+}
+body {
+    margin: 0;
+    font-family:  Helvetica , Arial, sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    background-color: #fff;
+}
+
+nav .nav-item>a {
+    font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    background-color: #fff;
+}
+
+nav .nav-item,
+nav .search {
+    padding: 15px;
+}
+
+nav .nav-item>a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+nav .nav-item>a:active {
+    color: white;
+}
+
+nav .dropdown-item:active,
+nav .dropdown-item:hover {
+    color: #fff;
+    background-color: green;
+    border-radius: 10px;
+}
+
+#navbarScroll {
+    padding-left: 10%;
+}
+
+.page-home .main{
+    padding-top: 250px;
+    background-image: none;
+    background: #fff no-repeat top;
+    /* margin-top: 5%; */
+}
+.pd-4{
+    padding-bottom: 1.5rem !important;
+    /* margin-top: 10%; */
+}
+.container {
+    position: relative;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container{
+    min-width: 1200px;
+}
+.page-content{
+    background-color: #fff;
+    padding: 1.25rem;
+    position: relative;
+}
+.row{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #fff,#fff,#E9F7EF,#A9DFBF,#27AE60,#145A32);
+    padding: 20px;
+}
