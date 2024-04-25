@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/VirtualLibraryWeb/css/updateProfile.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <nav>
+            <a href="/VirtualLibraryWeb/index.html"><img src="/VirtualLibraryWeb/img/logo/V.jpg" width="100px"
+                    height="100px" alt="" /></a>
+            <a class="text-nav" href="#">Thông Tin Cá Nhân</a>
+            <a class="text-nav" href="#!postBook">Bài đăng</a>
+            <hr>
+        </nav>
+        <div class="ND row" id="contentND">
+            <article class="col-md-1"></article>
+            <aside class="col-md-11">
+                <div class="account">
+                    <img src="/VirtualLibraryWeb/img/account/anh1.jpg" alt="" class="rounded-5" width="150px"
+                        height="150px">
+                </div>
+                <h2 class="text-center">Tâm Tâm</h2>
+                <div class="content">
+                    <div class="contentbody" id="ThongTinCB">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header">
+                                <h3>Thông tin cơ bản</h3>
+                                <p>Một số thông tin có thể hiển thị với những người khác sử dụng dịch vụ.</p>
+                            </div>
+                            <!-- hàng -->
+                            <div class="row card_row" style="padding: 20px;">
+                                <div class="col-3">Tên</div>
+                                <div class="col-9">
+                                    <li class="list-group-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop1">
+                                        Tâm Tâm</li>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">HỌ
+                                                        TÊN
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="margin: 10px;">
+                                                    <div class="mb-3" style="margin-bottom: 10px;">
+                                                        <p>Những thay đổi đối với tên của bạn sẽ được phản ánh trên Tài
+                                                            khoản
+                                                            của bạn.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="formGroupExampleInput" class="form-label">Họ
+                                                            tên</label>
+                                                        <input ng-model="fullnameNew" type="text"
+                                                            class="form-control border-primary"
+                                                            id="formGroupExampleInput">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer ">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button ng-click="updateAccountInfo()" data-bs-dismiss="modal"
+                                                        type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- hàng -->
+                            <div class="row card_row" style="padding: 20px;">
+                                <div class="col-3">Giới tính</div>
+                                <div class="col-9">
+                                    <li class="list-group-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2">
+                                        Nam</li>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">
+                                                        GIỚI TÍNH
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="margin: 10px;">
+                                                    <div class="mb-3" style="margin-bottom: 10px;">
+                                                        <p>Những thay đổi đối với tên của bạn sẽ được phản ánh trên Tài
+                                                            khoản
+                                                            của bạn.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input ng-model="genderNew" class="form-check-input"
+                                                                type="radio" name="flexRadioDefault"
+                                                                id="flexRadioDefault1" value="1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                Nam
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check">
+                                                            <input ng-model="genderNew" class="form-check-input"
+                                                                type="radio" name="flexRadioDefault"
+                                                                id="flexRadioDefault2" checked value="0">
+                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                Nữ
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer ">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button ng-click="updateAccountInfo()" data-bs-dismiss="modal"
+                                                            type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- hàng -->
+                            <div class="row card_row" style="padding: 20px;">
+                                <div class="col-3">Ngày sinh</div>
+                                <div class="col-9">
+                                    <li class="list-group-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop3">
+                                        25/11/2004</li>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">
+                                                        NGÀY SINH
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="margin: 10px;">
+                                                    <div class="mb-3" style="margin-bottom: 10px;">
+                                                        <p>Những thay đổi đối với tên của bạn sẽ được phản ánh trên Tài
+                                                            khoản
+                                                            của bạn.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <label for="formGroupExampleInput" class="form-label">Ngày
+                                                                sinh</label>
+                                                            <input ng-model="birthdayNew" type="text"
+                                                                class="form-control border-primary"
+                                                                id="formGroupExampleInput" placeholder="yyyy-MM-dd">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer ">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button ng-click="updateAccountInfo()" data-bs-dismiss="modal"
+                                                            type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentbody" id="LienLac">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header">
+                                <h3>Thông tin liên lạc</h3>
+                            </div>
+                            <!-- hàng -->
+                            <div class="row card_row" style="padding: 20px;">
+                                <div class="col-3">Email</div>
+                                <div class="col-9">
+                                    <li class="list-group-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop4">
+                                        tamtam@gmail.com</li>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">
+                                                        Mail
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="margin: 10px;">
+                                                    <div class="mb-3" style="margin-bottom: 10px;">
+                                                        <p>Những thay đổi đối với tên của bạn sẽ được phản ánh trên Tài
+                                                            khoản
+                                                            của bạn.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="formGroupExampleInput"
+                                                            class="form-label">Mail</label>
+                                                        <input ng-model="fullnameNew" type="text"
+                                                            class="form-control border-primary"
+                                                            id="formGroupExampleInput">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer ">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button ng-click="updateAccountInfo()" data-bs-dismiss="modal"
+                                                        type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentbody" id="BaoMat">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header">
+                                <h3>Tài Khoản</h3>
+                            </div>
+                            <!-- hàng -->
+                            <div class="row card_row" style="padding: 20px;">
+                                <div class="col-3">Tài khoản</div>
+                                <div class="col-9">
+                                    <li class="list-group-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop5">
+                                        Tâm Tâm</li>
+                                </div>
+                            </div>
+                            <!-- hàng -->
+                            <div class="row card_row" style="padding: 20px;">
+                                <div class="col-3">Mật khẩu</div>
+                                <div class="col-9">
+                                    <li class="list-group-item" type="password" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop6">
+                                        ****</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
