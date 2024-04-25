@@ -1,0 +1,62 @@
+main>nav {
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    /* 100% chiều cao của viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+main>nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+main>nav a img {
+    margin-bottom: 20px;
+}
+
+main>nav .text-nav:hover {
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+}
+/* main>nav .text-nav {
+    border: 1px solid gray;
+    border-radius: 50px;
+    color: black;
+} */
+#contentND{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content {
+    margin: 30px;
+}
+
+.contentbody {
+    margin-top: 50px;
+}
+
+.card_row:hover {
+    margin: 0px;
+    box-shadow: 0 0 2px gray;
+}
