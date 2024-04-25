@@ -10,7 +10,6 @@ app.config(function ($routeProvider) {
     })
     .when("/history", {
       templateUrl: "./html/user/historyRead.html"
-
     })
     .when("/favorite", {
       templateUrl: "./html/user/favoriteBooks.html",
@@ -18,14 +17,8 @@ app.config(function ($routeProvider) {
     .when("/detailsBook", {
       templateUrl: "./html/user/bookDetails.html",
     })
-    .when("/login", {
-      templateUrl: "./html/account/login.html",
-    })
     .when("/register", {
       templateUrl: "./html/account/register.html",
-    })
-    .when("/updateProfile", {
-      templateUrl: "./html/account/updateProfile.html",
     })
     .when("/changePass", {
       templateUrl: "./html/account/changePass.html",
