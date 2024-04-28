@@ -95,3 +95,6 @@ margin: 0;
 .cardXepHang .card-title{
     color: green;
 }
+table tr:hover{
+    box-shadow: 0 0 3px green;
+}
