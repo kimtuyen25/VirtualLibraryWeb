@@ -14,7 +14,7 @@ app.config(function ($routeProvider) {
     .when("/favorite", {
       templateUrl: "./html/user/favoriteBooks.html",
     })
-    .when("/detailsBook", {
+    .when("/detailBook", {
       templateUrl: "./html/user/bookDetails.html",
     })
     .when("/register", {
