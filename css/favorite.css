@@ -34,7 +34,6 @@
 .titlePage1{
     font-weight: bold;
 }
-
 .book-coverPage1 {
     perspective: 1000px; 
 }
@@ -48,53 +47,21 @@
 .book-coverPage1:hover img {
     transform: rotateY(-10deg);
 }
-
-.book-coverPage2 {
-    perspective: 1000px; 
-    margin-left: 18%;
+.btn{
+    width: 80px;
 }
-
-.book-coverPage2 img {
-    max-width: 190px;
-    height: auto;
-    text-align: center;
+.page-link{
+    background-color: rgb(23, 179, 127);
+    color: white;
+    border: none;
+    font-weight: bold;
 }
-.card-bd2{
-    margin-top: 1%;
-}
-.card-bd2 .card-title{
-    text-align: center;
-}
-
-
-
-.card-bd3{
-margin: 0;
-}
-.card-bd3 .card-title{
-    text-align: center;
-   font-size:17px;
-    }
-    
-.prev1{
-    margin-top: -4%;
-    margin-left: -7%;
-    color: green;
-}
-.next1{
-    margin-top: -4%;
-    margin-right: -7%;
-    color: green;
-}
-.cardXepHang{
+.page-link:hover{
+    color: aquamarine;
     background-color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-   
+    border: none;
+    font-weight: bold;
 }
-.cardXepHang .card-title{
-    color: green;
-}
-table tr:hover{
-    box-shadow: 0 0 3px green;
+.Page{
+    margin-left: 43%;
 }
