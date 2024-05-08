@@ -1,4 +1,6 @@
-
+.row{
+    width: 100%;
+}
 main>nav {
     background-color: white;
     width: 250px;
@@ -53,12 +55,12 @@ main>nav .text-nav:hover {
 .btn{
     width: 80px;
 }
-table{
+.tbl1{
     margin-left: 50px;
     margin-top: 20px;
 }
 .page-link{
-    margin-left: 500px;
+    margin-left: 420px;
     background-color: rgb(23, 179, 127);
     color: white;
     border: none;
@@ -70,40 +72,6 @@ table{
     border: none;
     font-weight: bold;
 }
-
-body.active1 {
-    background-color: black;
-    color: white; 
-}
-
-body.active2 {
-    background-color: white;
-    color: black; 
-}
-
-
-body.active1 nav {
-    background-color: rgb(26, 26, 26);
-    color: white;
-}
-
-body.active1 nav a {
-    background-color: rgb(26, 26, 26);
-    color: white;
-}
-
-body.active2 nav {
-    background-color: white;
-    color: black;
-}
-
-
-body.active1 header {
-    background-color: rgb(26, 26, 26);
-    color: white; 
-}
-
-body.active2 header {
-    background-color: white;
-    color: black;
+.chuyenTrang{
+margin-left: 150px;
 }
