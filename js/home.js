@@ -23,11 +23,11 @@ app.config(function ($routeProvider) {
     .when("/changePass", {
       templateUrl: "./html/account/changePass.html",
     })
-    .when("/postBook",{
+    .when("/postBook", {
       templateUrl: "./html/user/postBooks.html",
     })
     .otherwise({
       redirectTo: "/home"
     })
 
-  });
+});
