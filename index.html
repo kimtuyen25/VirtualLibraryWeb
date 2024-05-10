@@ -16,18 +16,18 @@
 </head>
 
 <body ng-app="myApp">
-    <header>
+    <header class="container">
+        <div class="page-content rounded-2 "">
         <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
                 <div class="collapse navbar-collapse row d-flex justify-content-center" id="navbarScroll">
                     <a class="col-md-1" aria-current="page" href="#!home">
                         <img src="img/logo/V.jpg" alt="" width="70%" height="70%">
                     </a>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item dropdown">
@@ -63,14 +63,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#!favorite"> Yêu thích</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#!bansach">
+                                    Mua sách</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <form class="search d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+                            <!-- <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button> -->
                         </form>
+                       
                     </div>
                     <!-- <div class="col-md-3">
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
@@ -87,7 +91,11 @@
                         </ul>
                     </div> -->
                     <div class="col-md-3">
-                        <ul class="navbar-nav navbar-nav-scroll col-md-4" style="--bs-scroll-height: 100px;">
+                        <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#!bansach">
+                                    Dịch vụ</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -95,8 +103,9 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#!changePass" >Đổi mật khẩu</a></li>
-                                    <li><a class="dropdown-item" href="html/account/updateProfile.html">Cập nhật tài khoản</a></li>
-                                    <li><a class="dropdown-item" href="#!postBook">Đăng bài</a></li>
+                                    <li><a class="dropdown-item" href="/html/account/updateProfile.html">Cập nhật tài khoản</a></li>
+                                    <li><a class="dropdown-item" href="/html/user/postBooks.html">Đăng bài</a></li>
+                                    <li><a class="dropdown-item" href="/html/user/postBooks.html">Đăng ký bán sách</a></li>
                                     <!-- <hr> -->
                                     <li><a class="dropdown-item" href="html/account/login.html">Đăng xuất</a></li>
                                 </ul>
@@ -104,8 +113,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
+
         </nav>
+    </div>
     </header>
 
         <ng-view></ng-view>

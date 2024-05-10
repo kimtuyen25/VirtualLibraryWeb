@@ -27,9 +27,9 @@ main>nav a img {
 }
 
 main>nav .text-nav:hover {
-    border: 1px solid orange;
+    border: 1px solid rgb(98, 216, 98);
     border-radius: 5px;
-    background-color: orange;
+    background-color: rgb(98, 216, 98);
     color: white;
 }
 /* main>nav .text-nav {
