@@ -4,7 +4,8 @@
     height: 350px;
     padding-top: 10px;
     margin-bottom: 50px;
-    background-image: linear-gradient(260deg, rgb(18, 20, 128), rgb(137, 10, 67));
+    /* background-color: rgb(7, 59, 7); */
+    background-image: linear-gradient(160deg, rgb(175, 226, 175), rgb(18, 105, 18));
 }
 
 .name-content {
@@ -84,12 +85,12 @@
 
 .introduce-content .buy:hover {
     cursor: pointer;
-    box-shadow: cadetblue 0 0px 10px;
+    box-shadow: rgb(88, 189, 192) 0 0px 15px;
 }
 
 .introduce-content .show:hover {
     cursor: pointer;
-    box-shadow: cadetblue 0 0px 10px;
+    box-shadow: rgb(88, 189, 192) 0 0px 15px;
 }
 
 /*service */
@@ -118,7 +119,7 @@
 .sub-title-1 {
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
-    background-image: linear-gradient(130deg, rgb(18, 20, 128), rgb(137, 10, 67));
+    background-image: linear-gradient(200deg, rgb(113, 184, 113), rgb(18, 105, 18));
     padding: 10px 15px;
     color: white;
     border-radius: 10px;
@@ -128,7 +129,7 @@
 .sub-title-2 {
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
-    background-image: linear-gradient(130deg, rgb(18, 20, 128), rgb(131, 10, 137));
+    background-image: linear-gradient(200deg, rgb(113, 184, 113), rgb(18, 105, 18));
     padding: 10px 15px;
     color: white;
     border-radius: 10px;
@@ -138,7 +139,7 @@
 .sub-title-3 {
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
-    background-image: linear-gradient(130deg, rgb(18, 20, 128), rgb(22, 207, 224));
+    background-image: linear-gradient(200deg, rgb(113, 184, 113), rgb(18, 105, 18));
     padding: 10px 15px;
     color: white;
     border-radius: 10px;
@@ -165,16 +166,16 @@
     display: flex;
     justify-content: end;
     padding: 5px 5px;
-    border: 1px solid rebeccapurple;
+    border: 1px solid green;
     border-radius: 10px;
     background-color: rgba(249, 247, 247, 0);
-    color: rebeccapurple;
+    color: green;
     font-weight: bold;
     font-size: 10px;
 }
 
 .content .button button:hover{
-    background-color: rebeccapurple;
+    background-color: green;
     color: white;
     cursor: pointer;
 }
