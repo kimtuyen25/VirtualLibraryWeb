@@ -1,0 +1,85 @@
+/* breadcrumb */
+.breadcrumb-item a{
+    color: rgba(33, 37, 41, 0.75);
+    text-decoration: none; 
+}
+
+.container-them-sanpham {
+    background-color: whitesmoke;
+}
+
+.container-col-1 {
+    padding-top: 2%;
+    margin-right: 2%;
+    margin-left: 25px;
+}
+
+/* TITLE */
+.title-manage-products {
+    padding-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+
+
+/* CONTAINER TABLE */
+.container-info-sanpham {
+    padding: 25px 15px 25px 15px;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    background-color: white;
+    
+}
+
+.form-info-sanpham {
+    margin: 0px;
+}
+
+.title {
+    padding-bottom: 5px;
+    margin-left: 25px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.info {
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+}
+
+.container-price-sanpham {
+    padding: 25px 15px 25px 25px;
+    margin: 30px 0;
+    background-color: white;
+}
+
+.container-price-sanpham .info {
+    margin-top: 20px;
+}
+
+.loai-sanpham{
+    display: flex;
+    justify-content: space-around;
+}
+#loai-sanpham{
+    width: 550px;
+}
+
+/* BUTTON */
+.container-button {
+    border-top: 1px solid #dee2e6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.container-button>button {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.container-button a {
+    color: white;
+    text-decoration: none;
+}
