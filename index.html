@@ -5,7 +5,9 @@
     <title>Title</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -94,8 +96,9 @@
                                     Tài khoản
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#!changePass" >Đổi mật khẩu</a></li>
-                                    <li><a class="dropdown-item" href="/html/account/updateProfile.html">Cập nhật tài khoản</a></li>
+                                    <li><a class="dropdown-item" href="#!changePass">Đổi mật khẩu</a></li>
+                                    <li><a class="dropdown-item" href="/html/account/updateProfile.html">Cập nhật tài
+                                            khoản</a></li>
                                     <li><a class="dropdown-item" href="/html/user/postBooks.html">Đăng bài</a></li>
                                     <!-- <hr> -->
                                     <li><a class="dropdown-item" href="html/account/login.html">Đăng xuất</a></li>
@@ -108,18 +111,142 @@
         </nav>
     </header>
 
-        <ng-view></ng-view>
-<!-- <a href="#!detailsBook">detailsBook</a> -->
+    <ng-view></ng-view>
+    <!-- <a href="#!detailsBook">detailsBook</a> -->
+
+    <div class="btn-message">
+        <h5> <i class="fa-solid fa-message"></i> Message</h5>
+    </div>
+    <div class="container-message">
+
+        <div class="title-message">
+            <h5>Message</h5>
+            <div class="exit-message">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div class="content-message">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="row message">
+                        <div class="col-md-12">
+                            <div class="account-orther-message">
+                                <img src="/img/account/anh1.jpg" alt="">
+                                <div class="account-orther-name">
+                                    <h5>Dương Văn Kha</h5>
+                                    <p>Có gì liên hệ shop nhé, không được thì e hoàn tiền lại ạ.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row message">
+                        <div class="col-md-12">
+                            <div class="account-orther-message">
+                                <img src="/img/account/anh1.jpg" alt="">
+                                <div class="account-orther-name">
+                                    <h5>Dương Văn Kha</h5>
+                                    <p>Có gì liên hệ shop nhé, không được thì e hoàn tiền lại ạ.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-7" style="width: 63%; background-color: rgba(128, 128, 128, 0.07);">
+                    <div class="message-segment">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="message-people-orther">
+                                    <img src="/img/account/anh1.jpg" alt="">
+                                    <div class="content-people-orther">
+                                        <div class="card">
+                                            <p>Xin chào bạn kdlksajdlsa kldjsdjklas jdklasjldaj kjdkajsdlk kjdklaj
+                                                dlkjkdlsajdkla jdklaskl jdklajsdlkaj kjdklsajd dlkaja</p>
+                                            <span>20:48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="message-you">
+                                    <div class="content-you">
+                                        <div class="card">
+                                            <p>Xin chào bạn kdlksajdlsa kldjsdjklas jdklasjldaj kjdkajsdlk kjdklaj
+                                                dlkjkdlsajdkla jdklaskl jdklajsdlkaj kjdklsajd dlkaja</p>
+                                            <span>20:48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="message-people-orther">
+                                    <img src="/img/account/anh1.jpg" alt="">
+                                    <div class="content-people-orther">
+                                        <div class="card">
+                                            <p>Xin chào bạn kdlksajdlsa kldjsdjklas jdklasjldaj kjdkajsdlk kjdklaj
+                                                dlkjkdlsajdkla jdklaskl jdklajsdlkaj kjdklsajd dlkaja</p>
+                                            <span>20:48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="message-people-orther">
+                                    <img src="/img/account/anh1.jpg" alt="">
+                                    <div class="content-people-orther">
+                                        <div class="card">
+                                            <p>Xin chào bạn kdlksajdlsa kldjsdjklas jdklasjldaj kjdkajsdlk kjdklaj
+                                                dlkjkdlsajdkla jdklaskl jdklajsdlkaj kjdklsajd dlkaja</p>
+                                            <span>20:48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="message-people-orther">
+                                    <img src="/img/account/anh1.jpg" alt="">
+                                    <div class="content-people-orther">
+                                        <div class="card">
+                                            <p>Xin chào bạn kdlksajdlsa kldjsdjklas jdklasjldaj kjdkajsdlk kjdklaj
+                                                dlkjkdlsajdkla jdklaskl jdklajsdlkaj kjdklsajd dlkaja</p>
+                                            <span>20:48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
     <footer class="container-fluid">
 
-            <div class="text-center">
-                <img src="img/logo/V.jpg" alt="" width="50px" height="50px">
-                <h2 class="text-success">Virtual Library Website</h2><br> 
-                <h6>HOTLINE: 0984 144 092</h6>
-                <h6>Email: info.virtualLibraryWebsite@gmail.com</h6><br>
-                <h6 class="text-light">Cố gắng vì ước mơ của bạn!
-                    <br>Chúng tôi luôn đồng hành cùng bạn trên con đường chinh phục ước mơ!</h6>
-            </div>
+        <div class="text-center">
+            <img src="img/logo/V.jpg" alt="" width="50px" height="50px">
+            <h2 class="text-success">Virtual Library Website</h2><br>
+            <h6>HOTLINE: 0984 144 092</h6>
+            <h6>Email: info.virtualLibraryWebsite@gmail.com</h6><br>
+            <h6 class="text-light">Cố gắng vì ước mơ của bạn!
+                <br>Chúng tôi luôn đồng hành cùng bạn trên con đường chinh phục ước mơ!
+            </h6>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -130,5 +257,30 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    var message = document.querySelector(".container-message");
+    var btnMessage = document.querySelector(".btn-message");
+    var exitMessage = document.querySelector(".exit-message");
+    function showMessage() {
+        message.style.display = "block";
+        message.style.transform = "scale(0)";
+        setTimeout(() => {
+            message.style.transform = "scale(1)"
+            message.style.transformOrigin = "bottom right";
+        }, 400);
+
+    };
+    btnMessage.addEventListener("click", showMessage);
+
+    function exit() {
+      
+        message.style.transform = "scale(1)";
+        setTimeout(() => {
+            message.style.transform = "scale(0)";
+            message.style.transformOrigin = "bottom right";
+        }, 1000);
+    };
+    exitMessage.addEventListener("click",exit);
+</script>
 
 </html>

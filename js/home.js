@@ -26,6 +26,9 @@ app.config(function ($routeProvider) {
     .when("/postBook",{
       templateUrl: "./html/user/postBooks.html",
     })
+    .when("/storeHome",{
+      templateUrl: "./html/user/storeHome.html",
+    })
     .otherwise({
       redirectTo: "/home"
     })
