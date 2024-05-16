@@ -62,7 +62,8 @@
     justify-content: space-around;
 }
 #loai-sanpham{
-    width: 550px;
+    width: 515px;
+    margin-right: 10px;
 }
 
 /* BUTTON */
