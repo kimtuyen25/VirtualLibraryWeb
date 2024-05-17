@@ -1,0 +1,185 @@
+main {
+    font-family: Helvetica, Arial, sans-serif;
+    /* background-color: rgb(244, 243, 243); */
+}
+.panel1,.panel2,.panel3,.panel4{
+    margin: 0px;
+    padding: 20px;
+    background-color: white;
+}
+.panel1>article .bigImg>img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.panel1 .smallImg {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel1>article .smallImg>img {
+    margin-right: 6px;
+    width: 60px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.panel1>article .smallImg>img:hover {
+    border: 1px solid red;
+}
+
+.panel1 aside .title>p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.panel1 aside .bodyPanle1 p {
+    color: gray;
+}
+
+.panel1 aside .bodyPanle2 {
+    margin-bottom: 50px;
+}
+
+.panel1 aside .bodyPanle2>p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: orangered;
+    /* padding: 10px 20px; */
+
+}
+
+.panel1 aside .bodyPanle3>.title,
+.bodyPanle4>.title {
+    width: 130px;
+    font-size: 1.2rem;
+}
+
+.panel1 .checked {
+    margin: 0px;
+    color: white;
+    background-color: green;
+    width: 120px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.panel1 aside .bodyPanle4 {
+    margin: 30px 0px;
+}
+
+.panel1 aside .bodyPanle4>input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.panel1 aside .footer {
+    margin: 60px 0px;
+}
+
+.panel2 {
+    margin: 10px 0px;
+}
+
+.panel2 div>button {
+    width: 100px;
+    height: 30px;
+    padding: 0px;
+}
+.panel2 p{
+    font-family:  Helvetica , Arial, sans-serif;
+    font-size: 1.3rem;
+    color: black;
+}
+.panel3 .title{
+    font-family:  Helvetica , Arial, sans-serif;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+.panel3 .body>article>p{
+    font-family:  Helvetica , Arial, sans-serif;
+    color: gray;
+    padding-left: 5px;
+}
+.panel4{
+    margin: 10px 0px;
+    font-family:  Helvetica , Arial, sans-serif;
+}
+.panel4>.title{
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+.panel4>.header{
+    background-color: rgb(251, 250, 246);
+    border: 1px solid rgb(236, 228, 212);
+    padding: 20px 0px;
+    margin: 0px 10px;
+}
+.panel4 article>p,.panel4 article>.star{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(255, 111, 0);
+}
+.panel4 aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.panel4 aside .DG-link{
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid orangered;
+    background-color:  white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-right: 20px;
+    float: left;
+}
+.Active{
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid orangered;
+    background-color: orangered;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-right: 20px;
+    float: left;
+}
+.panel4 .danhgia{
+margin-top: 50px;
+}
+.panel4 .cmt{
+    margin: 20px 0px;
+}
+.panel4 .cmt>.avatar{
+   padding-left: 60px;
+}
+.panel4 .cmt>.nd .content{
+    margin: 0px;
+    padding: 0px;
+}
+.panel4 .cmt>.nd .ndcmt{
+    margin: 15px 0px;
+    padding:0px;
+}
+.panel4 .cmt>.nd>.phanhoi{
+    padding: 10px;
+    background-color: rgb(247, 246, 246);
+}
+.panel4 .cmt>.nd>.phanhoi p{
+    margin: 0px;
+    padding: 2px 0px;
+}

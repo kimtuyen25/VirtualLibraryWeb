@@ -1,0 +1,76 @@
+main{
+    background-color: white;
+    border-radius: 20px;
+}
+main>.title{
+    align-items: center;
+    margin-top: 10%;
+}
+main>.title>p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    transition: background-size 10s ease-in-out;
+}
+.card {
+    background-color: rgb(248, 248, 248);
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card .card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card .card-body>.star {
+    margin: 10px 0px;
+}
+
+.card .row {
+    padding-left: 20px;
+}
+
+.card .heard {
+    padding: 20px 10px;
+    font-size: 1.8rem;
+    color: red;
+}
+
+.SP .card-title {
+    margin: 20px 0px;
+}
+
+.card img {
+    height: 250px;
+}
+
+.card:hover .default-img {
+    opacity: 0;
+}
+
+.card:hover .hover-img {
+    opacity: 1;
+}
+
+.card:hover {
+    background-color: white;
+    box-shadow: 0px 5px 8px rgb(203, 203, 203);
+}
+
+.image-container {
+    position: relative;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.btn-toolbar{
+    margin: 30px 0px;
+}
