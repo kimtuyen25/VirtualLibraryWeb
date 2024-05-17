@@ -26,8 +26,10 @@ app.config(function ($routeProvider) {
     .when("/postBook", {
       templateUrl: "./html/user/postBooks.html",
     })
+    .when("/buyBook", {
+      templateUrl: "./html/user/buyBooksHome.html",
+    })
     .otherwise({
       redirectTo: "/home"
     })
-
 });
