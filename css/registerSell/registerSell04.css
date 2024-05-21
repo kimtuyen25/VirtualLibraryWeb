@@ -92,9 +92,7 @@ body {
 
 .step1 .step-dot,
 .step2 .step-dot,
-.step3 .step-dot,
-.step4 .step-dot,
-.step5 .step-dot {
+.step3 .step-dot {
     display: inline-block;
     text-align: center;
     margin-left: 50%;
@@ -102,6 +100,16 @@ body {
     height: 10px;
     border-radius: 50%;
     background-color: green;
+}
+
+.step4 .step-dot{
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
 }
 
 .step1 .step-content,
@@ -150,6 +158,12 @@ body {
     align-items: center;
     background-color: rgba(209, 232, 209, 0.643);
     border: 1px solid green;
+    padding: 5px 10px;
+}
+.container-thongbao-choduyet {
+    align-items: center;
+    background-color: rgb(247, 224, 182, 0.643);
+    border: 1px solid orange;
     padding: 5px 10px;
 }
 
