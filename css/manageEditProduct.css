@@ -78,7 +78,7 @@
     width: auto;  /* Đảm bảo hình ảnh lấp đầy container */
     display: block; /* Hiển thị hình ảnh như một block để có thể căn chỉnh ký tự "x" */
     box-shadow: 0 0 6px #dee2e6;
-    padding: 0px 18px;
+    padding:10px 10px;
 }
 .show-img-div .image span {
     position: absolute;
