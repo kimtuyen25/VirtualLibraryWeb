@@ -66,7 +66,6 @@ main>.title>p{
     transition: opacity 1s ease-in-out; /* Áp dụng hiệu ứng chuyển đổi */
 }
 
-
 /* Hiển thị ảnh đầu tiên */
 .image-container .default-img{
     opacity: 1;
@@ -89,7 +88,7 @@ main>.title>p{
 }
 
 /* Hiển thị ảnh thứ hai */
- .card:hover .image-container img:nth-child(2) {
+.card:hover .image-container img:nth-child(2) {
     opacity: 0;
     animation: slideshow2 2s infinite; /* Áp dụng animation cho ảnh thứ hai */
 }
@@ -105,35 +104,20 @@ main>.title>p{
 }
 
 /* Hiển thị ảnh thứ ba */
- .card:hover .image-container img:nth-child(3) {
+.card:hover .image-container img:nth-child(3) {
     opacity: 0;
-    animation: slideshow3 3s infinite; /* Áp dụng animation cho ảnh thứ hai */
+    animation: slideshow2 3s infinite; /* Áp dụng animation cho ảnh thứ hai */
 }
 
-/* Chuyển đổi hiển thị của ảnh thứ hai */
-@keyframes slideshow3 {
-    0%, 50% {
-        opacity: 0;
-    }
-    55%, 100% {
-        opacity: 1;
-    }
-}
-
-/* Hiển thị ảnh thứ 4 */
-.card:hover .image-container img:nth-child(4) {
+/* Hiển thị ảnh cuối cùng khi hover */
+.card:hover .image-container img:last-child {
     opacity: 0;
-    animation: slideshow4 5s infinite; /* Áp dụng animation cho ảnh thứ hai */
+    animation: slideshow2 5s forwards;
 }
 
-/* Chuyển đổi hiển thị của ảnh thứ hai */
-@keyframes slideshow4 {
-    0%, 50% {
-        opacity: 0;
-    }
-    55%, 100% {
-        opacity: 1;
-    }
+/* Đảm bảo ảnh cuối cùng vẫn hiển thị sau khi hover */
+.card .image-container img:last-child.show {
+    opacity: 1;
 }
 
 .card:hover {
