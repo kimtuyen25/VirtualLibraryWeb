@@ -335,6 +335,12 @@ margin-top: 50px;
     float: none;
     margin-right: 10px;
 }
+.panel5 .nd> .reply{
+    margin-left: 10px;
+}
+.panel5 .nd> .reply>.form-group{
+   width: 500px; margin: 10px 0px;
+}
 .panel5 .cmt>.nd>.phanhoi{
     padding: 10px;
     background-color: rgb(247, 246, 246);
