@@ -1,10 +1,8 @@
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
 }
 
 img {
-    /* border-top-right-radius: 50%; */
-    /* width: 200px; */
     border-radius: 50%;
     height: 90px;
     width: 90px;
@@ -62,8 +60,6 @@ img {
     /* margin: 5px; */
     color: azure;
     text-decoration: none;
-
-
 }
 
 .message {
@@ -86,15 +82,78 @@ img {
 .sales-information {
     margin: 20px;
 }
-.sales-information>.row-1,.row-2,.row-3>.row>.col-md-6>p{
+
+.sales-information>.row-1,
+.row-2,
+.row-3>.row>.col-md-6>p {
     font-size: 17px;
 }
-.sales-information>.row-1>.row>.col-md-6>p>span{
+
+.sales-information>.row-1>.row>.col-md-6>p>span {
     color: rgb(245, 12, 12);
 }
-.sales-information>.row-2>.row>.col-md-6>p>span{
+
+.sales-information>.row-2>.row>.col-md-6>p>span {
     color: rgb(245, 12, 12);
 }
-.sales-information>.row-3>.row>.col-md-6>p>span{
+
+.sales-information>.row-3>.row>.col-md-6>p>span {
     color: rgb(245, 12, 12);
+}
+
+
+/* san pham */
+
+.card .row {
+    padding-left: 20px;
+}
+
+.col-md-3 .card {
+    margin-bottom: 10px;
+    width: 274px;
+}
+
+
+.card .heard {
+    padding: 20px 10px;
+    font-size: 1.8rem;
+    color: red;
+}
+
+.SP .card-title {
+    margin: 20px 0px;
+}
+
+.image-container img {
+    height: 250px;
+    width: auto;
+}
+
+.card:hover .default-img {
+    opacity: 0;
+}
+
+.card:hover .hover-img {
+    opacity: 1;
+}
+
+.card:hover {
+    background-color: white;
+    box-shadow: 0px 5px 8px rgb(203, 203, 203);
+}
+
+.image-container {
+    position: relative;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-toolbar {
+    margin: 30px 0px;
 }

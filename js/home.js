@@ -32,6 +32,9 @@ app.config(function ($routeProvider) {
     .when("/cart",{
       templateUrl: "./html/user/shoppingCart.html",
     })
+    .when("/introduction",{
+      templateUrl: "./html/user/introduction.html",
+    })
     .otherwise({
       redirectTo: "/home"
     })

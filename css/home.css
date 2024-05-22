@@ -12,7 +12,9 @@ body {
     text-align: left;
     background-color: #fff;
 }
-
+.navbar-expand-lg .navbar-nav .nav-link {
+ padding-right: 0px;
+}
 nav .nav-item>a {
     font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     font-size: 18px;
@@ -21,6 +23,7 @@ nav .nav-item>a {
     color: #333;
     text-align: left;
     background-color: #fff;
+    padding: 0px;
 }
 
 nav .nav-item,
@@ -106,6 +109,7 @@ footer {
     cursor: pointer;
 }
 
+
 .container-message {
     position: fixed;
     width: 45%;
@@ -116,8 +120,8 @@ footer {
     background-color: white;
     box-shadow: 2px 2px 2px 2px gray;
     z-index: 10;
-   display: none;
-   transition: transform 1.5s ease;
+    display: none;
+    transition: transform 1.5s ease;
 
 }
 
@@ -195,7 +199,7 @@ footer {
     overflow: hidden;
 }
 
-.row.message>.col-md-12:hover {
+.row.message-row>.col-md-12:hover {
     background-color: rgba(128, 128, 128, 0.078);
     cursor: pointer;
 }
@@ -210,14 +214,24 @@ footer {
 
 .content-message>.row>.col-md-7 {
     position: relative;
-    height: 460px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    height: 425px;
+    padding: 0px;
 }
 
 .message-segment {
-    margin-top: 10px;
+    height: 375px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 0px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 
+
+}
+.message-segment .row .col-md-12{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .message-people-orther {
@@ -230,7 +244,7 @@ footer {
     width: auto;
     display: inline-block;
     padding: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px; */
 }
 
 .content-people-orther>.card>p {
@@ -254,10 +268,65 @@ footer {
     width: auto;
     display: inline-block;
     padding: 10px;
-    margin-bottom: 10px;
     background-color: rgba(104, 225, 255, 0.438);
 }
 
 .content-you>.card>p {
     margin: 0px;
+}
+
+.input-message {
+    position: fixed;
+    bottom: 0px;
+    left: 233px;
+    display: flex;
+}
+
+.input-message .form-control {
+    border-radius: 0px;
+    outline: none;
+    width: 411px;
+    height: 35px;
+    border-right: none;
+
+}
+
+.input-message .btn-send-submit {
+    border-radius: 0px;
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    background-color: white;
+    border-left: none;
+    height: 35px;
+    width: 40px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.input-message .btn-outline-secondary:hover{
+background-color: rgba(255, 255, 255, 0) ;
+
+}
+
+
+
+.header-message-segment {
+
+    background-color: white;
+    position: relative;
+}
+
+.header-message-segment img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.header-account {
+    padding: 10px;
+    display: inline-flex;
+}
+.header-account .name-account h3{
+    padding-left: 10px;
+    margin: 0px;
+    font-size: 25px;
 }
