@@ -24,7 +24,7 @@
         <header class="sticky-top">
             <!-- <nav class="navbar bg-body-tertiary"> -->
                 <div class="navbar navbar-expand-lg bd-navbar container-fluid  justify-content-center align-items-center">
-                  <a class="navbar-brand "><img src="/img/logo/V-white.png" alt=""></a>
+                  <a class="navbar-brand "  href="/index.html"><img src="/img/logo/V-white.png" alt=""></a>
                   <form class="d-flex" role="search">
                     <button type="button" class="btnSeacrh" data-bs-toggle="modal" data-bs-target="#btnSeacrh">Seacrh</button> 
                   </form>
@@ -42,15 +42,20 @@
                     </div>
               <!-- </nav> -->
           </header>
-        <main class="container">
+        <main class="container" style="margin: 0px; max-width: 2000px;">
 <div class="row">
-    <aside class="col-md-2">
-        <nav class="vertical-menu">
-            <a class="text-nav" href="/html/account/updateProfile.html">Thông Tin Cá Nhân</a>
-            <a class="text-nav" href="/html/user/postBooks.html">Bài Đăng</a>
-            <a class=" activeMenu2" href="">Đơn Hàng</a>
-        </nav>
-    </aside>
+  <aside class="col-md-2">
+    <nav class="vertical-menu">
+        <div class="menu-item">
+            <a class="text-nav" href="javascript:void(0);" onclick="toggleSubmenu()">Thông Tin Cá Nhân</a>
+            <div class="submenu">
+                <a class="text-subnav" href="/html/account/viewProfile.html">Xem Hồ Sơ</a>
+                <a class="text-subnav" href="/html/account/banks.html">Ngân Hàng</a>
+            </div>
+        </div>
+        <a class="activeMenu2" href="/html/user/bill.html">Đơn Hàng</a>
+    </nav>
+</aside>
     <aside class="col-md-10" >
         <div class="row">
     <div class="col-9 menuNgangNe">
@@ -107,10 +112,17 @@
     </div>
     <div class="card cardMuaBanh">
       <div class="card-body row">
+        <div class="col-md-6" style="font-weight: 150;">Cảm ơn bạn đã mua sắm tại VirtualLibaryWeb!</div>
+        <div class="col-md-6"><button type="button" class="btn btn-danger">Hủy Đơn</button></div>
+      </div>
+    </div>
+    <div class="card cardMuaBanh">
+      <div class="card-body row">
         <div class="col-md-6"></div>
         <div class="col-md-6"><button type="button" class="btn btn-light">Liên Hệ Người Bán</button></div>
       </div>
     </div>
+
     <div class="card cardMuaBanh">
       <div class="card-body row">
         <div class="col-md-6"></div>
@@ -172,7 +184,10 @@
 
   <div class="card cardProduct">
     <div class="card-header cardProduct-header">
-      <p class="tenNguoiBan"><img width="24px" height="24px" src="/img/icon/user.png" alt=""> Bạch Ngọc Sách</p>
+      <p class="tenNguoiBan">
+        <img width="24px" height="24px" src="/img/icon/user.png" alt="">
+        <span>Bạch Ngọc Sách</span>
+      </p>    
     </div>
     <div class="card-body cardProduct-body">
         <div class="list-book">
@@ -209,13 +224,13 @@
   </div>
   <div class="card cardGia">
     <div class="card-body row">
-      <div class="col-md-8 text1">Voucher từ Shop</div>
+      <div class="col-md-8 text1">Voucher sản phẩm</div>
       <div class="col-md-4 text2">-6.000đ</div>
     </div>
   </div>
   <div class="card cardGia">
     <div class="card-body row">
-      <div class="col-md-8 text1">Thành tiền:</div>
+      <div class="col-md-8 text1">Thành tiền</div>
       <div class="col-md-4 text2 thanhTien"> 350.000đ</div>
     </div>
   </div>
@@ -227,7 +242,7 @@
   </div>
 </div>
 
-    </aside>
+    
 </div>
         </main>
         <footer>
@@ -265,6 +280,14 @@
         <script src="/js/donHang.js">
             
         </script>
+                <script>
+                  function toggleSubmenu() {
+                      var menuItem = document.querySelector('.menu-item');
+                      if (menuItem) {
+                          menuItem.classList.toggle('open');
+                      }
+                  }
+                          </script>
 
     </body>
 </html>

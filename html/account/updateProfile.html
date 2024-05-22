@@ -15,15 +15,38 @@
 </head>
 
 <body>
+    <header class="sticky-top">
+        <!-- <nav class="navbar bg-body-tertiary"> -->
+            <div class="navbar navbar-expand-lg bd-navbar container-fluid  justify-content-center align-items-center">
+              <a class="navbar-brand "><img src="/img/logo/V-white.png" alt=""></a>
+              <form class="d-flex" role="search">
+                <button type="button" class="btnSeacrh" data-bs-toggle="modal" data-bs-target="#btnSeacrh">Seacrh</button> 
+              </form>
+              <div class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img width="24px" height="24px" class="sunHeader" src="/img/icon/user.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="container-fluid" style="background-color: white;">
+                <form class="d-flex" role="search">
+                  <button type="button" style="background-color: white; color: white; border: none;" data-bs-toggle="modal" data-bs-target="#btnSeacrh">Seacrh</button> 
+                </form>
+                </div>
+          <!-- </nav> -->
+      </header>
     <main class="container">
-        <nav>
-            <a href="/index.html"><img src="/img/logo/V.jpg" width="100px"
-                    height="100px" alt="" /></a>
-                    <a class="text-nav" href="/html/account/updateProfile.html">Thông Tin Cá Nhân</a>
-                    <a class="text-nav" href="/html/user/postBooks.html">Bài đăng</a>
-            <hr>
-        </nav>
-        <div class="ND row" id="contentND">
+        <div class="row">
+            <aside class="col-md-2">
+                <nav class="vertical-menu">
+                    <a class="activeMenu2" href="/html/account/updateProfile.html">Thông Tin Cá Nhân</a>
+                    <a class="text-nav" href="/html/user/postBooks.html">Bài Đăng</a>
+                    <a class="text-nav" href="/html/user/bill.html">Đơn Hàng</a>
+                </nav>
+            </aside>
+            <aside class="col-md-10" >
+        <div class="" id="contentND">
             <article class="col-md-1"></article>
             <aside class="col-md-11">
                 <div class="account">
@@ -276,6 +299,8 @@
                 </div>
             </aside>
         </div>
+    </aside>
+    </div>
     </main>
     <footer>
         <!-- place footer here -->
