@@ -23,20 +23,53 @@ app.config(function ($routeProvider) {
     .when("/changePass", {
       templateUrl: "./html/account/changePass.html",
     })
-    .when("/postBook",{
+    .when("/postBook", {
       templateUrl: "./html/user/postBooks.html",
-    })
-    .when("/storeHome",{
-      templateUrl: "./html/user/storeHome.html",
-    })
-    .when("/cart",{
-      templateUrl: "./html/user/shoppingCart.html",
-    })
-    .when("/introduction",{
-      templateUrl: "./html/user/introduction.html",
     })
     .otherwise({
       redirectTo: "/home"
     })
+});
+app.controller('SliderController', function($scope) {
+  // Controller logic if needed
+});
 
-  });
+app.directive('draggableSlider', function() {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+
+          element.on('mousedown', function(e) {
+              isDown = true;
+              startX = e.pageX - element[0].offsetLeft;
+              scrollLeft = element[0].scrollLeft;
+              element.addClass('active');
+              console.log("mousedown");
+          });
+
+          element.on('mouseleave', function() {
+              isDown = false;
+              element.removeClass('active');
+              console.log("mouseleave");
+          });
+
+          element.on('mouseup', function() {
+              isDown = false;
+              element.removeClass('active');
+              console.log("mouseup");
+          });
+
+          element.on('mousemove', function(e) {
+              if (!isDown) return;
+              e.preventDefault();
+              const x = e.pageX - element[0].offsetLeft;
+              const walk = (x - startX) * 2; // The multiplication factor controls the speed of the scroll
+              element[0].scrollLeft = scrollLeft - walk;
+              console.log("mousemove");
+          });
+      }
+  };
+});

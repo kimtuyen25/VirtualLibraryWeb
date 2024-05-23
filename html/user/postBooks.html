@@ -42,30 +42,37 @@
                     height="100px" alt="" /></a>
             <a class="text-nav" href="/html/account/updateProfile.html">Thông Tin Cá Nhân</a>
             <a class="text-nav" href="/html/user/postBooks.html">Bài đăng</a>
+            <a class="text-nav" href="/html/user/postBooks.html">Đơn Hàng</a>
             <hr>
         </nav>
+
+
         <div class="ND row">
-            <article class="col-md-1"></article>
-            <aside class="col-md-11">
+
+            <article class="col-md-2"></article>
+            <aside class="col-md-9">
+             
+   
                 <form class="row needs-validation formDieuKhien" >
-                    <div class="col-md-3">
+
+                  <div class="row">
+                    <div class="col-md-4">
                         <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <select class="form-select">
                             <option  value="">Đã duyệt</option>
                             <option>Chưa duyệt</option>
                           </select>
                           </div>
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-primary">Thêm</button>
-                        <button type="button" class="btn btn-success">Sửa</button>
-                    <button type="button" class="btn btn-danger">Xóa</button>  
-                    <button type="button" class="btn btn-primary">Chương</button>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#book">Thêm</button>
+                      </div>
+                      </div>
                     </form>
-                </div>
 
-                <table class="table">
+
+                <table class="table tbl1">
                     <thead>
                       <tr>
                         <th scope="col">Tên Sách</th>
@@ -81,28 +88,36 @@
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button>  
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button></td>
                       </tr>
                       <tr>
                         <th scope="row">Tuần Thiên Yêu Bộ</th>
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button> 
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong" >Chương</button> </td>
                       </tr>
                       <tr>
                         <th scope="row">Tuần Thiên Yêu Bộ</th>
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button> 
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button> </td>
                       </tr>
                       <tr>
                         <th scope="row">Tuần Thiên Yêu Bộ</th>
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button> 
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button> </td>
                       </tr>
 
                       <tr>
@@ -110,7 +125,9 @@
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button>  
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button></td>
                       </tr>
 
                       <tr>
@@ -118,21 +135,27 @@
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button> 
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button> </td>
                       </tr>
                       <tr>
                         <th scope="row">Tuần Thiên Yêu Bộ</th>
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button> 
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button> </td>
                       </tr>
                       <tr>
                         <th scope="row">Tuần Thiên Yêu Bộ</th>
                         <td>Tịch Mịch Ngã Độc Tẩu</td>
                         <td>Tu Tiên</td>
                         <td>1200</td>
-                        <td><button type="button" class="btn btn-success">Edit</button></td>
+                        <td><button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#book">Sửa</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteBook">Xóa</button> 
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chuong">Chương</button> </td>
                       </tr>
                       
                     </tbody>
@@ -159,6 +182,195 @@
             </aside>
         </div>
     </main>
+
+    <!-- Modal Xoa -->
+    <div class="modal fade" id="deleteBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Bạn chắc chắn muốn xóa quyển sách này không?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+            <button type="button" class="btn btn-danger">Xóa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="deleteChuong" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Bạn chắc chắn muốn xóa chương này không?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+            <button type="button" class="btn btn-danger">Xóa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal Them va Sua -->
+        <div class="modal fade" id="book" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form >
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sách</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card" id="imageContainer" style="width: 120px; max-width: 120px; max-height: 137px; height: 137px; margin-top: 15%; margin-bottom: 12%;"></div>
+                        <label for="formFile"  class="form-label">Ảnh:</label>
+                      <input class="form-control"  name="poster" type="file" id="formFile" onchange="displayImage(this)" required>
+                
+                    </div>
+                    <div class="col-md-8">
+                    <div class="mb-3">
+                    <label for="id" class="form-label">Tên Truyện:</label>
+                    <input type="text" class="form-control" id="id" name="id"  required>
+                </div>
+                    <div class="mb-3">
+                    <label for="title" class="form-label">Thể Loại:</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Truyện</option>
+                      <option value="1">Đề Thi</option>
+                    </select>
+                </div>
+                 <div class="mb-3">
+                    <label for="view" class="form-label">Tác giả:</label>
+                    <input type="text" class="form-control" id="view" required>
+                </div>
+                </div>
+              </div>
+                  <div class="mb-3">
+                    <label for="gioiThieu" class="form-label">Giới thiệu:</label>
+                    <textarea class="form-control" id="gioiThieu" rows="" cols="" name="gioiThieu" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="ghiChu" class="form-label">Ghi chú:</label>
+                    <textarea class="form-control" id="ghiChu" rows="" cols="" name="ghiChu" ></textarea>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                  <button type="submit"  class="btn btn-primary">Lưu</button>
+                </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+
+
+<!-- Chương -->
+        <div class="modal fade" id="chuong" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form >
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Chương</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+<div class="row">
+  <div class="col-md-6">
+    <label for="id" class="form-label">Tên Chương:</label>
+    <input type="text" class="form-control" id="id" name="id"  required>
+</div>
+  <div class="col-md-6">
+    <label for="noiDung"  class="form-label">Nội dung:</label>
+      <input class="form-control"  name="noiDung" type="file" id="noiDung" required>
+</div>
+</div>
+                <div class="mb-3">
+                    <label for="ghiChu" class="form-label">Ghi chú:</label>
+                    <textarea class="form-control" id="ghiChu" rows="" cols="" name="ghiChu" ></textarea>
+                </div>
+
+                <table class="table tbl2">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tên Chương</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Chương 1: Quỷ</th>
+                      <td><button type="button" class="btn btn-success">Sửa</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteChuong">Xóa</button>  
+                       </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chương 2: Quỷ</th>
+                      <td><button type="button" class="btn btn-success">Sửa</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteChuong">Xóa</button>  
+                       </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Chương 3: Quỷ</th>
+                      <td><button type="button" class="btn btn-success">Sửa</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteChuong">Xóa</button>  
+                       </td>
+                    </tr>
+                    
+                    <tr>
+                      <th scope="row">Chương 4: Quỷ</th>
+                      <td><button type="button" class="btn btn-success">Sửa</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteChuong">Xóa</button>  
+                       </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Chương 5: Quỷ</th>
+                      <td><button type="button" class="btn btn-success">Sửa</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteChuong">Xóa</button>  
+                       </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <div class="Page navigation example ">
+ 
+                  <ul class="pagination" >
+                      <li class="page-item">
+                        <a class="page-link chuyenTrang" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link chuyenTrang" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link chuyenTrang" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link chuyenTrang" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                  <button type="submit"  class="btn btn-primary">Lưu</button>
+                </div>
+                  </form>
+            </div>
+          </div>
+        </div>
     <footer>
         <!-- place footer here -->
     </footer>
@@ -196,6 +408,35 @@ dark.addEventListener('click', () => {
 });
 
         </script>
+
+<script>
+  function displayImage(input) {
+      var file = input.files[0];
+      if (file) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+              var image = document.createElement("img");
+              image.src = e.target.result;
+              document.getElementById("imageContainer").innerHTML = "";
+              document.getElementById("imageContainer").appendChild(image);
+          }
+          reader.readAsDataURL(file);
+      }
+  }
+  function displayImage1(input) {
+      var file = input.files[0];
+      if (file) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+              var image = document.createElement("img");
+              image.src = e.target.result;
+              document.getElementById("imageContainer1").innerHTML = "";
+              document.getElementById("imageContainer1").appendChild(image);
+          }
+          reader.readAsDataURL(file);
+      }
+  }
+</script>
 </body>
 
 </html>
