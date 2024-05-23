@@ -33,15 +33,15 @@
   height: 250px;
 }
 
-.cardProducts:hover .default-img {
+.card:hover .default-img {
   opacity: 0;
 }
 
-.cardProducts:hover .hover-img {
+.card:hover .hover-img {
   opacity: 1;
 }
 
-.cardProducts:hover {
+.card:hover {
   background-color: white;
   box-shadow: 0px 5px 8px rgb(203, 203, 203);
 }
