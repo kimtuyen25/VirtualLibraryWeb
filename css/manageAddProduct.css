@@ -6,11 +6,7 @@
 .container-them-sanpham {
     background-color: whitesmoke;
 }
-.container-col-1 {
-    padding-top: 2%;
-    margin-right: 2%;
-    margin-left: 25px;
-}
+
 
 
 /* TITLE */
@@ -24,9 +20,6 @@
 /* CONTAINER TABLE */
 .container-info-sanpham {
     padding: 25px 15px 25px 15px;
-    margin-top: 2%;
-    margin-right: 2%;
-    margin-left: 2%;
     background-color: white;
 }
 .container-info-sanpham .info {
@@ -131,9 +124,7 @@
 /* Giá sản phẩm */
 .container-price-sanpham {
     padding: 25px 15px 25px 15px;
-    margin-top: 2%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-top: 10px;
     background-color: white;
     font-size: 15px;
 }
@@ -158,7 +149,7 @@
 
 /* button thêm loại */
 .loai-sanpham .button-them {
-    width: 120px;
+    /* width: 120px; */
 }
 .loai-sanpham .button-them button {
     font-size: 15px;
@@ -168,8 +159,6 @@
 .container-button {
     border-top: 1px solid #dee2e6;
     padding: 25px 15px 25px 15px;
-    margin-right: 2%;
-    margin-left: 2%;
     background-color: white;
     display: flex;
     justify-content: end;
@@ -178,7 +167,7 @@
     margin-left: 10px;
     font-size: 15px;
 }
-.container-button a {
+/* .container-button a {
     color: white;
     text-decoration: none;
-}
+} */
