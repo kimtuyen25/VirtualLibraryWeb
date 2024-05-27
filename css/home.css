@@ -55,12 +55,12 @@ nav .dropdown-item:hover {
     padding-top: 250px;
     background-image: none;
     background: #fff no-repeat top;
-    /* margin-top: 5%; */
+   
 }
 
 .pd-4 {
     padding-bottom: 1.5rem !important;
-    /* margin-top: 10%; */
+
 }
 
 .container {
@@ -69,8 +69,6 @@ nav .dropdown-item:hover {
 
 .container {
     width: 100%;
-    /* padding-right: 2px;
-    padding-left: 2px; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -148,7 +146,6 @@ footer {
 
 .input-group>.form-control {
     border-color: #ced4da;
-    /* Màu viền mặc định */
     box-shadow: none;
     border-left: none;
 }
@@ -205,7 +202,6 @@ footer {
     cursor: pointer;
 }
 
-/* .message-segment> */
 .message-people-orther>img {
     height: 30px;
     width: 30px;
@@ -245,7 +241,7 @@ footer {
     width: auto;
     display: inline-block;
     padding: 10px;
-    /* margin-top: 10px; */
+
 }
 
 .content-people-orther>.card>p {

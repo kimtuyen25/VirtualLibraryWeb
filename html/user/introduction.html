@@ -1,34 +1,53 @@
-<span class="top-bg-op-box"
-    style="background-image: url(&quot;https://static.cdnno.com/storage/topbox/15d256d4071bbb3d0dd2a38cf1af8e5a.webp&quot;); position: absolute; z-index: 0; left: 0px; overflow: hidden; width: 100%; height: 388px; background-repeat: no-repeat; background-position: 50% 0px; background-size: cover;"></span>
-<div style="height: 280px;"></div>
-<main class="main pb-4">
-    <link rel="stylesheet" href="/css/listBooks.css">
-    <div class="container">
-        <div class="page-content rounded-2">
-            <div class="row">
-                <div class="col-md-12">
-                    <img src="https://store.soft365.vn/wp-content/uploads/2019/06/banner-home.png" style="width: 100%;"
-                        alt="">
-                    <p style="font-size: 20px;">Một thư viện điện tử kỹ thuật số là một nền tảng trực tuyến cung cấp quyền truy cập vào một bộ
-                        sưu tập lớn các tài liệu kỹ thuật số, bao gồm sách, bài báo, bản vẽ kỹ thuật, và nhiều nội dung
-                        khác, được tổ chức một cách có trật tự và dễ dàng tra cứu. Thư viện này thường cung cấp một giao
-                        diện dễ sử dụng cho người dùng, cho phép họ tìm kiếm và truy cập các tài liệu theo các tiêu chí
-                        như chủ đề, tác giả, hoặc từ khóa.
+<!doctype html>
+<html lang="en">
 
-                        Với sự phát triển của công nghệ, web thư viện điện tử kỹ thuật số trở thành một nguồn tài nguyên
-                        quan trọng và tiện lợi cho sinh viên, nghiên cứu viên, và những người làm việc trong lĩnh vực kỹ
-                        thuật. Bằng cách sử dụng các công nghệ tiên tiến như cơ sở dữ liệu trực tuyến, công cụ tìm kiếm
-                        thông minh, và hệ thống phân loại hiệu quả, thư viện điện tử kỹ thuật số mang lại sự thuận tiện
-                        và tối ưu hóa cho quá trình tìm kiếm và truy cập thông tin.
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-                        Bên cạnh việc cung cấp tài liệu, một số web thư viện điện tử kỹ thuật số còn cung cấp các dịch
-                        vụ bổ sung như mạng xã hội chia sẻ kiến thức, diễn đàn trao đổi thông tin, và các khóa học trực
-                        tuyến để hỗ trợ người dùng mở rộng kiến thức và kỹ năng của họ trong lĩnh vực kỹ thuật. Điều này
-                        làm cho web thư viện điện tử kỹ thuật số trở thành một nguồn tài nguyên không thể thiếu trong
-                        thế giới công nghệ ngày nay.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <input class="" type="checkbox" name="tagName" id="clickAll">
+        <input class="inputCh" type="checkbox" name ="tagName">
+        <input class="inputCheck" type="checkbox" name="tagName" id="">
+    </header>
+    <main></main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        var allChecked = document.querySelectorAll("");
+        document.getElementById("clickAll").onclick = function () {
+            if (this.checked) {
+              
+                for (var i = 0; i < allChecked.length; i++) {
+                 allChecked[i].checked = true;
+                
+                }
+            } else {
+                for (var i = 0; i < allChecked.length; i++) {
+                 allChecked[i].checked = false;
+                
+                }
+            }
+        };
+
+    </script>
+</body>
+
+</html>

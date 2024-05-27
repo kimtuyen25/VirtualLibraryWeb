@@ -25,10 +25,10 @@
   <!-- Angular Router -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
   <link rel="stylesheet" href="/css/manageAddProduct.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed" ng-app="myApp">
@@ -38,11 +38,11 @@
     <div class="preloader flex-column justify-content-center align-items-center">
       <img class="animation__wobble" src="../../../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
-    <nav ng-include="'../../../views/header.html'">
+    <nav ng-include="'../views/header.html'">
 
     </nav>
     <!-- /.navbar -->
-    <aside ng-include="'../../../views/menu.html'"></aside>
+    <aside ng-include="'../views/menu.html'"></aside>
 
 
     <!-- Content Wrapper. Contains page content -->
@@ -119,7 +119,7 @@
                             <div class="lbl-loai">
                               <label for="loai-sanpham" class="form-label">Loại sách</label>
                             </div>
-                            <div class="loai-sanpham" >
+                            <div class="loai-sanpham">
                               <select name="" id="loai-sanpham" class="form-control" style="width: 65%;">
                                 <option value="">Ngôn tình</option>
                                 <option value="">Sách giáo khoa</option>
@@ -128,7 +128,7 @@
                                 <option value="">Tiểu thuyết Việt Nam</option>
                               </select>
                               <!-- Button trigger modal thêm sách -->
-                              <div class="button-them" >
+                              <div class="button-them">
                                 <button class="btn btn-outline-success button-them-loai" type="button"
                                   data-bs-toggle="modal" data-bs-target="#exampleModal">Thao tác </button>
                                 <button type="button" class="btn btn-outline-danger" style="width: 100px;">Xóa</button>
@@ -313,13 +313,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0
-    </div>
-  </footer>
+  <footer ng-include="'../views/footer.html'"></footer>
   </div>
   <!-- ./wrapper -->
 
